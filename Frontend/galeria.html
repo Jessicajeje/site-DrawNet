@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha galeria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <h2 class="logo">DrawGalery</h2>
+
+            <nav class="menu">
+                <ul>
+                    <li onclick="inicio()">
+                        <span class="icon">🏠</span>
+                        Início
+                    </li>
+
+                    <li class="active">
+                        <span class="icon">🎨</span>
+                        Minha Galeria
+                    </li>
+
+                    <li onclick="irLession()">
+                        <span class="icon">📚</span>
+                        Aprendizado
+                    </li>
+
+                    <li onclick="irPerfil()">
+                        <span class="icon">👤</span>
+                        Perfil
+                    </li>
+
+                    <li onclick="irConfig()">
+                        <span class="icon">⚙️</span>
+                        Configurações
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+
+            <!-- Topo com busca e ícone de usuário -->
+            <header class="top-bar">
+                
+                <form class="search">
+                    <input type="text" placeholder="Buscar artista, obra...">
+                </form>
+
+                <div class="profile-icon">
+                    <span>👤</span>
+                </div>
+            </header>
+
+            <!-- Destaques -->
+            <section class="desenhos">
+                <h3>Meus desenhos</h3>
+
+                
+                <div class="adicionar">
+                    <button>+</button>
+                </div>
+            </section>
+        </main>
+    </div>
+<script src="nav.js"></script>
+</body>
+</html>

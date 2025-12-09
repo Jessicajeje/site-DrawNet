@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <h2 class="logo">DrawNet</h2>
+
+            <nav class="menu">
+                <ul>
+                    <li class="active">
+                        <span class="icon">🏠</span>
+                        Início
+                    </li>
+
+                    <li onclick="irGaleria()">
+                        <span class="icon">🎨</span>
+                        Minha Galeria
+                    </li>
+
+                    <li onclick="irLession()">
+                        <span class="icon">📚</span>
+                        Aprendizado
+                    </li>
+
+                    <li onclick="irPerfil()">
+                        <span class="icon">👤</span>
+                        Perfil
+                    </li>
+
+                    <li onclick="irConfig()">
+                        <span class="icon">⚙️</span>
+                        Configurações
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+
+            <!-- Topo com busca e ícone de usuário -->
+            <header class="top-bar">
+                
+                <form class="search">
+                    <input type="text" placeholder="Buscar artista, obra...">
+                </form>
+
+                <div class="profile-icon">
+                    <span>👤</span>
+                </div>
+            </header>
+
+            <!-- Destaques -->
+            <section class="destaques">
+                <h3>Destaques:</h3>
+
+                <div class="cards">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+
+                <a class="ver-mais" href="#">Ver mais...</a>
+            </section>
+
+            <!-- Postagem -->
+            <section class="postar">
+                <input type="text" placeholder="Digite a legenda da sua arte, pensamento...">
+                <button>postar minha criação</button>
+            </section>
+
+        </main>
+    </div>
+<script src="nav.js"></script>
+</body>
+</html>
