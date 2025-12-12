@@ -13,6 +13,10 @@
   "type": "commonjs",
   "dependencies": {
     "express": "^5.2.1",
-    "nodemon": "^3.1.11"
+    "express-handlebars": "^8.0.3",
+    "handlebars": "^4.7.8",
+    "mysql2": "^3.15.3",
+    "nodemon": "^3.1.11",
+    "sequelize": "^6.37.7"
   }
 }

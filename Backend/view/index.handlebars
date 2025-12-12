@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilo.css" />
   </head>
   <body>
+    <script src="login.js"></script>
     <header>
 <nav class="navbar">
   <div class="logo">DrawNet</div>
@@ -35,7 +36,35 @@
         <div id="img">
              <h1>Sua plataforma de desenho e aprendizado esperando por você!</h1>
              <div class="comece"><button class="comece-botao" onclick="comeco()">Comece agora</button></div>
+             <div class="modal-dialog modal-lg">
+              
+    <div class="quadrado-central">
+      <div class="conteudo">
+        <h2>Bem-vindo de volta!</h2>
+        <form action="/login" method="post">
+          <label for="email">e-mail:</label><br>
+          <input
+            type="email"
+            id="email"
+            onchange="validateFields()"
+          /><br /><br /><br />
+          <label for="senha">senha:</label><br>
+          <input type="password" id="senha" onchange="validateFields()" />
+        </form>
+        <button type="button" id="esq-senha" disabled="true">
+          Recuperar minha senha
+        </button>
+        <div class="botao-acao">
+          <button type="button" id="entrar" disabled="true" onclick="inicio()">Entrar</button>
         </div>
+        <div class="nao-tenho-conta">
+          <p>Não tem uma conta ainda?</p>
+          <button onclick="criarConta()">Me cadastrar</button>
+        </div>
+      </div>
+    </div>
+             </div>
+        </div>.
         <section class="saiba-mais">
         
         </section>
