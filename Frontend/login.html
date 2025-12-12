@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,24 +7,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="container-central">
+    <script src="login.js"></script>
     <div class="quadrado-central">
-        <div class="conteudo">
-      <h2>Bem-vindo de volta!</h2>
-      <form action="" method="post">
-        <label for="email">e-mail:</label>
-        <input type="text" id="email"><br><br><br>
-        <label for="senha">senha:</label>
-        <input type="password">
-      </form>
-      <a href="#" id="esq-senha">Esqueceu a senha?</a>
-      <div class="botao-acao">
-        <button>Entrar</button>
-      </div>
-      <div class="nao-tenho-conta">
-        <p>Não tem uma conta ainda?</p>
-        <button>Me cadastrar</button>
+      <div class="conteudo">
+        <h2>Bem-vindo de volta!</h2>
+        <form action="" method="post">
+          <label for="email">e-mail:</label>
+          <input
+            type="email"
+            id="email"
+            onchange="validateFields()"
+          /><br /><br /><br />
+          <label for="senha">senha:</label>
+          <input type="password" id="senha" onchange="validateFields()" />
+        </form>
+        <button type="button" id="esq-senha" disabled="true">
+          Recuperar minha senha
+        </button>
+        <div class="botao-acao">
+          <button type="button" id="entrar" disabled="true">Entrar</button>
+        </div>
+        <div class="nao-tenho-conta">
+          <p>Não tem uma conta ainda?</p>
+          <button onclick="criarConta()">Me cadastrar</button>
+        </div>
       </div>
     </div>
-    </div>
+    <script src="nav.js"></script>
   </body>
 </html>

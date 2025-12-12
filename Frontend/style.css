@@ -7,10 +7,10 @@
     font-family: Arial, sans-serif;
 }
 
-/* Fundo geral */
+/* Fundo geral
 body {
-    background: #e8edff; /* azul clarinho da imagem */
-}
+    background: #e8edff;
+} */
 
 button{
     color: white;
@@ -28,23 +28,22 @@ button{
 .quadrado-central{
     margin-top: 6%;
     align-items:center ;
-    width: 557px;
-    height: 725px;
     border-radius: 12px;
     background: #FFF;
     box-shadow: 0 0 8px 3px rgba(160, 160, 160, 0.1);
-    text-align: center;
+  
 }
 .conteudo{
-    padding:20px;
+    padding:50px;
 }
 .conteudo h2{
     margin-bottom: 20%;
     color:#0047B3;
     font-size: 32px;
+      text-align: center;
 }
 .conteudo input{
-width: 254px;
+width: 275px;
 height: 40px;
 border-radius:5px;
 border:1px solid #c2cbe8;
@@ -52,7 +51,7 @@ border:1px solid #c2cbe8;
 }
 .conteudo label{
 color: #0047B3;
-font-size: 20px;
+font-size: 16px;
 }
 
 .botao-acao button{
@@ -66,30 +65,52 @@ border-radius: 12px;
 border:none;
 margin-top: 20%;
 }
-.botao-acao button:hover{
+.botao-acao button.ativo{
     background-color: #0012dc;
 
 }
 
 #esq-senha{
     font-size: 14px;
-    color: #000;}
-
+    color: #00035c;
+    padding:0;
+    border:none;
+    margin:10px;
+    margin-left: 50px;
+    background-color: transparent;
+}
+button[disabled]{
+opacity:0.4
+    }
 .nao-tenho-conta{
-    position: absolute;
-   bottom: 200px;
-   right: 0;
-   left: 0;
+    margin-top: 30%;
 }
 .nao-tenho-conta button{
     width: 275px;
-height: 58px;
-background-color: #0025ba;
+height: 45px;
+background-color: #1338ce;
 color: #ffff;
-font-size: 20px;
+font-size: 18px;
 font-weight: bold;
 border-radius: 12px;
 border:none;
+}
+.nao-tenho-conta button:hover{
+    background-color: #000d99;
+}
+select{
+   width: 275px;          /* largura */
+  padding: 10px;         /* espaço interno */
+  border-radius: 8px;    /* bordas arredondadas */
+  border: 1px solid #c2cbe8;
+  font-size: 16px;
+  background: white;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s ease;
+}
+option{
+    color:#0047B3;
 }
 /* CONTAINER PRINCIPAL */
 .container {
@@ -99,6 +120,7 @@ border:none;
      min-height: 100vh;
 
 }
+
 
 /* SIDEBAR */
 .sidebar {
